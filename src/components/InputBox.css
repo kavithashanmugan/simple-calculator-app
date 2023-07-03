@@ -1,0 +1,22 @@
+.inputbox-wrapper{
+    background-color: white;
+    height:10em;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items:flex-end;
+    margin:10px;
+    padding-top: 5rem;
+
+}
+
+.inputbox-wrapper > h1 {
+    color:black;
+    font-size: 25px;
+
+}
+
+.inputbox-wrapper > .result{
+    flex:1;
+    font-size: 20px;
+}

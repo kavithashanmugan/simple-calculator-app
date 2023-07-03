@@ -1,28 +1,42 @@
 import "./App.css";
+import Button from "./components/Button";
+import InputBox from "./components/InputBox";
 
 function App() {
+
+  const equalButtonColor = "#9de4ed";
+  const actionButtonColor = 'orange';
   return (
     <div className="calculator-body">
-      <div className="calculator-wrapper">     
+      
       <h1>Calculator</h1>
-      <button className="span-two">AC</button>
-        <button>DEL</button>
-        <button>&divide;</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>*</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>+</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>-</button>
-        <button>.</button>
-        <button>0</button>
-        <button className="span-two">=</button>
+      <div className="calculator-wrapper">   
+      <InputBox/>  
+      <div className="calculator-row">
+        <Button symbol="7"/>
+        <Button symbol="8"/>
+        <Button symbol="9"/>
+        <Button symbol="÷" color={actionButtonColor}/>
+      </div>
+      <div className="calculator-row">
+        <Button symbol="4"/>
+        <Button symbol="5"/>
+        <Button symbol="6"/>
+        <Button symbol="*" color={actionButtonColor}/>
+      </div>
+      <div className="calculator-row">
+        <Button symbol="3"/>
+        <Button symbol="2"/>
+        <Button symbol="1"/>
+        <Button symbol="+" color={actionButtonColor}/>
+      </div>
+      <div className="calculator-row">
+      <Button symbol="0"/>
+        <Button symbol="."/>
+        <Button symbol="=" color={equalButtonColor}/>
+        <Button symbol="-" color={actionButtonColor}/>
+      </div>
+      
       </div>
       </div>
   );

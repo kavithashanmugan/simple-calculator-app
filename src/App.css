@@ -3,19 +3,30 @@
 }
 
 body {
-  margin: 0;
   background: black;
-  color:#ffffff
 }
 
 .calculator-body{
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
+
+.calculator-body > h1{
+  color: aliceblue;
+}
+
 .calculator-wrapper{
   background-color: white;
-  width: 50vh;
-  height:40vh;
   border-radius: 16px;
+  width:400px;
+}
+.calculator-row{
+  display: flex;
+  flex:1
+}
+.calculator-wrapper h1 {
+  margin-top: 0;
+  text-align: center;
 }
