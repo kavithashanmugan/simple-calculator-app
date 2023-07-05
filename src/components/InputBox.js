@@ -1,10 +1,10 @@
 import "./InputBox.css";
-const InputBox = () => {
+const InputBox = ({inputNumber,result}) => {
   return (
     <div className="inputbox-wrapper">
-      <div className="operand-area">Result</div>
+      <div className="operand-area">{inputNumber}</div>
       <div className="result">
-        <h2>Text</h2>
+        <h2>{result}</h2>
       </div>
     </div>
   );

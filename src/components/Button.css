@@ -11,3 +11,12 @@
     flex:1;
 
 }
+
+.button-wrapper:hover,
+.button-wrapper:focus
+{
+    color:rgb(176, 201, 223);
+    background-color: #386abf;
+    cursor: pointer;
+
+}
